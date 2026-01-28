@@ -67,7 +67,7 @@ export function RasyList() {
           <div key={rasa.id} style={{ backgroundColor: "lightgray", border: "3px solid black", padding: "1rem", width: "250px"}}>
             <h2>{rasa.nazwa}</h2>
             <p><strong>Charakter:</strong> {rasa.charakter}</p>
-            <p><strong>FCI:</strong> {rasa.nr_fci !== null ? rasa.nr_fci : "Rasa nie uznana przez FCI"}</p>
+            <p><strong>Numer wzorca FCI:</strong> {rasa.nr_fci !== null ? rasa.nr_fci : "Rasa nie uznana przez FCI"}</p>
             <p><strong>Próby pracy:</strong> {rasa.proby_pracy ? "Podlega" : "Nie podlega"}</p>
             
             <Link to={`/form/${rasa.id}`} state={rasa}>

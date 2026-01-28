@@ -64,7 +64,7 @@ export function RasaFormularz() {
       <form onSubmit={handleSubmit}>
         <label>Nazwa</label><br/><input type="text" value={form.nazwa} onChange={e => setForm({...form, nazwa: e.target.value})} required /><br/><br/>
         <label>Charakter</label><br/><input type="text" value={form.charakter} onChange={e => setForm({...form, charakter: e.target.value})} /><br/><br/>
-        <label>Numer FCI</label><br/><input type="number" value={form.nr_fci} onChange={e => setForm({...form, nr_fci: parseInt(e.target.value)})} /><br/><br/>
+        <label>Numer wzorca FCI</label><br/><input type="number" value={form.nr_fci} onChange={e => setForm({...form, nr_fci: parseInt(e.target.value)})} /><br/><br/>
         <label>
           Próby pracy:
           <input type="checkbox" checked={form.proby_pracy} onChange={e => setForm({...form, proby_pracy: e.target.checked})} />
